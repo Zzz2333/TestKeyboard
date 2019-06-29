@@ -3,3 +3,7 @@
 ################################################################################
 
 *.lock
+/.vs/TestKeyboard/v16/Server/sqlite3/storage.ide
+/.vs/TestKeyboard/v16/Server/sqlite3
+/.vs/TestKeyboard/v16/.suo
+/TestKeyboard/obj/Debug
