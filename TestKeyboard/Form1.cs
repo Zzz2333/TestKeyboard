@@ -24,6 +24,7 @@ namespace TestKeyboard
           
         }
 
+        //WinIO
         private void Button1_Click(object sender, EventArgs e)
         {
             mPressKey = new PressKeyByWinIO();
@@ -40,6 +41,7 @@ namespace TestKeyboard
             mPressKey.KeyPress('C');
         }
 
+        //WinRing0
         private void Button2_Click(object sender, EventArgs e)
         {
             mPressKey = new PressKeyByWinRing0();
@@ -54,7 +56,21 @@ namespace TestKeyboard
             mPressKey.KeyPress('A');
             mPressKey.KeyPress('B');
             mPressKey.KeyPress('C');
+        }
 
+        //SendInput
+        private void button3_Click(object sender, EventArgs e)
+        {
+            mPressKey = new PressKeyBySendInput();
+            bool bInitResult = mPressKey.Initialize(EnumWindowsType.Win64);
+            if (bInitResult == false)
+            {
+                MessageBox.Show("组件初始化失败");
+            }
+
+            this.richTextBox1.Focus();
+            Thread.Sleep(1000);
+            mPressKey.KeyPress('A');
         }
     }
 }

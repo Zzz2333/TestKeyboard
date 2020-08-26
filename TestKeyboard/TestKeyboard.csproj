@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DriverStageHelper\SendInputHelper.cs" />
     <Compile Include="DriverStageHelper\WinIO32.cs" />
     <Compile Include="DriverStageHelper\WinIO64.cs" />
     <Compile Include="DriverStageHelper\WinRing0.cs" />
@@ -55,6 +56,7 @@
     </Compile>
     <Compile Include="PressKey\EnumWindowsType.cs" />
     <Compile Include="PressKey\IPressKey.cs" />
+    <Compile Include="PressKey\PressKeyBySendInput.cs" />
     <Compile Include="PressKey\PressKeyByWinIO.cs" />
     <Compile Include="PressKey\PressKeyByWinRing0.cs" />
     <Compile Include="Program.cs" />
